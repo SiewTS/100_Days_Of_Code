@@ -1,0 +1,55 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    background: greenyellow;
+    color: black;
+    min-width: 260px;
+}
+
+h1, p{
+    width: 100%;
+    margin: 20px auto 10px auto;
+    text-align: center;
+}
+
+#survey-form{
+    background: grey;
+    width: 50%;
+    margin: 30px auto;
+    padding: 30px 50px;
+}
+
+#name-label, #email-label, #number-label, #dropdown-label, #radio-label, #cb-label, #comment-label, #dropdown-label-2, #submit
+{
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+#name, #email, #number, #dropdown, #comment, #dropdown-2{
+    display: block;
+    border-radius: 3px;
+    width: 95%;
+    margin: 0 auto;
+    height: 30px;
+}
+
+#A, #B, #C, #cb1, #cb2, #cb3{
+    
+}
+
+#comment{
+    height: 100px;
+}
+
+#submit{
+    border-radius: 3px;
+    background: greenyellow;
+    height: 40px;
+}
+
+#submit:hover{
+    background: rgba(173,255,47,0.7);
+    cursor: pointer;
+}
