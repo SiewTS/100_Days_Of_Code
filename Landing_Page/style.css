@@ -34,10 +34,6 @@ ul{
     padding: 10px;
 }
 
-li{
-    float: left;
-}
-
 li a {
     display: block;
     /* background: #333; */
@@ -87,31 +83,60 @@ h2{
     padding: 20px 0 50px 0; */
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
 .item{
     /*use flex too*/
     border: 1px solid black;  
-    width: 300px;
-    height: 300px; 
+    border-radius: 10px;
+    width: calc(100%/3);
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
 
+.item > .pName{
+    background: rgb(227, 238, 74);
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.item > h3{
+    margin: 20px 0 0 0;
+}
+
+.item > ul > li{
+    padding: 5px;
 }
 
 #item1{
     background: cornflowerblue;
-
 }
 
 #item2{
     background: crimson;
-
 }
 
 #item3{
     background: darkgreen;
+}
 
+.item > .btn{
+    background: rgb(238, 129, 52);
+    margin: 20px auto;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.item > .btn:hover{
+    background: rgb(247, 121, 31);
+    cursor: pointer;
 }
 
 /*media queries*/
