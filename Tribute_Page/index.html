@@ -1,63 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreeCodeCamp - Project_1 | Tribute Page</title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-    <!--main element that contains other elements-->
-    <div id="main">
+    <head>
+        <title>Tribute Page</title>
+        <link rel="stylesheet" href="style.css">
         
-        <!--Subject of the tribute page-->
-        <div id="title">
-            <h1>Christopher Nolan</h1>
-            <p>Film Director | Producer | Screen Writer</p>
+    </head>
+    <body>
+
+        <div id="main">
+
+            <div id="banner">
+                <h1 id="title">Christopher Nolan</h1>
+
+                <div id="img-div">
+                    <img id="image" src="./img/interstellar-bts-4.jpg"/>
+                    <div id="img-caption">
+                        <p>Christopher Nolan, behind the scenes at one of his best movies - 
+                            <b>Interstellar,</b> with an IMAX Camera.
+                        </p>
+                    </div>
+                    <a id="cta-btn" href="#tribute-info">Nolan's Movies</a>
+                </div>
+             </div>
+
+            <div id="tribute-info">
+                
+                <div id="info">
+                    <h4 id="sub-title">Timeline of Christopher Nolan's Movies</h5>
+                    <div id="flex-container">
+
+                            <a href="https://www.imdb.com/title/tt6386408/?ref_=nm_flmg_wr_18" target="_blank" class="item" id="item1">
+                                <h5 class="mname">1989 | Tarantella (TV Short)</h5>
+                            </a>
+
+                            <a href="https://www.imdb.com/title/tt6386412/?ref_=nm_flmg_wr_17" target="_blank" class="item" id="item2">
+                                <h5 class="mname">1996 | Larceny (Short Film)</h5>
+                            </a>
+
+                            <a href="https://www.imdb.com/title/tt0411302/?ref_=nm_flmg_wr_16" target="_blank" class="item" id="item3">
+                                <h5 class="mname">1997 | Doodlebug (Short Film)</h5>
+                            </a>
+
+                            <a href="https://www.imdb.com/title/tt0154506/?ref_=nm_flmg_wr_15" target="_blank" class="item" id="item4">
+                                <h5 class="mname">1998 | Following</h5>
+                            </a>
+
+                            <a href="https://www.imdb.com/title/tt0209144/?ref_=nm_flmg_wr_14" target="_blank" class="item" id="item5">
+                                <h5 class="mname">2000 | Memento</h5>
+                            </a>
+
+                            <a href="https://www.imdb.com/title/tt0372784/?ref_=nm_flmg_wr_13" target="_blank" class="item" id="item6">
+                                <h5 class="mname">2005 | Batman Begins</h5>
+                            </a>
+
+                            <a href="https://www.imdb.com/title/tt0482571/?ref_=nm_flmg_wr_11" target="_blank" class="item" id="item7">
+                                <h5 class="mname">2006 | The Prestige</h5>
+                            </a>
+
+                            <a href="https://www.imdb.com/title/tt0468569/?ref_=nm_flmg_wr_10" target="_blank" class="item" id="item8">
+                                <h5 class="mname">2008 | The Dark Knight</h5>
+                            </a>
+
+                            <a href="https://www.imdb.com/title/tt1166100/?ref_=nm_flmg_wr_9" target="_blank" class="item" id="item9">
+                                <h5 class="mname">2008 | Ghajini</h5>
+                            </a>
+
+                            <a href="https://www.imdb.com/title/tt1375666/?ref_=nm_flmg_wr_8" target="_blank" class="item" id="item10">
+                                <h5 class="mname">2010 | Inception</h5>
+                            </a>
+
+                            <a href="https://www.imdb.com/title/tt1345836/?ref_=nm_flmg_wr_6" target="_blank" class="item" id="item11">
+                                <h5 class="mname">2012 | The Dark Knight Rises</h5>
+                            </a>
+
+                            <a href="https://www.imdb.com/title/tt0770828/?ref_=nm_flmg_wr_5" target="_blank" class="item" id="item12">
+                                <h5 class="mname">2013 | Man of Steel</h5>
+                            </a>
+
+                            <a href="https://www.imdb.com/title/tt0816692/?ref_=nm_flmg_wr_4" target="_blank" class="item" id="item13">
+                                <h6 class="year"></h6>
+                                <h5 class="mname">2014 | Interstellar</h5>
+                            </a>
+
+                            <a href="https://www.imdb.com/title/tt5013056/?ref_=nm_flmg_wr_3" target="_blank" class="item" id="item14">
+                                <h5 class="mname">2017 | Dunkirk</h5>
+                            </a>
+
+                            <a href="https://www.imdb.com/title/tt6723592/?ref_=nm_flmg_wr_2" target="_blank" class="item" id="item15">
+                                <h5 class="mname">2020 | Tenet</h5>
+                            </a>
+                    </div>
+
+                    <div id="quote">
+                        <p><i>"I've always believed that if you want to really try and make a great film, not a good film, but 
+                            a great film, you have to take a lot of risks."</i></p>
+
+                        <p><i>-- Christopher Nolan</i></p>
+                    </div>
+                </div>
+                
+                <div id="footer">
+                    <p>If you like epistemology and metaphysical movie themes, Nolan's movies is a must-watch! 
+                        To understand more about Nolan, read <a id="tribute-link" href="https://en.wikipedia.org/wiki/Christopher_Nolan" target="_blank">here</a> to find out!</p>
+                </div>
+            </div>
+
         </div>
 
-        <!--image container with caption-->
-        <div id="img-div">       
-            <img id="image" src="../img/interstellar-bts-4.jpg"/>
-            <p id="img-caption">Christopher Nolan, behind the scene at one of his best movies - INTERSTELLAR, with an IMAX camera.</p>
-        </div>
-
-        <!--container with tribute info-->
-        <div id="tribute-info">
-            <p>Timeline of Christopher Nolan's Movies</p>
-            <ul>
-                <li><strong>1989</strong> - Tarantella (TV Short)</li>
-                <li><strong>1996</strong> - Larceny (Short Film)</li>
-                <li><strong>1997</strong> - Doodlebug (Short Film)</li>
-                <li><strong>1998</strong> - Following</li>
-                <li><strong>2000</strong> - Memento</li>
-                <li><strong>2005</strong> - Batman Begins</li>
-                <li><strong>2006</strong> - The Prestige</li>
-                <li><strong>2008</strong> - The Dark Knight</li>
-                <li><strong>2008</strong> - Ghajini</li>
-                <li><strong>2010</strong> - Inception</li>
-                <li><strong>2012</strong> - The Dark Knight Rises</li>
-                <li><strong>2013</strong> - Man of Steel</li>
-                <li><strong>2014</strong> - Interstellar</li>
-                <li><strong>2017</strong> - Dunkirk</li>
-                <li><strong>2020</strong> - Tenet</li>
-            </ul>
-
-            <blockquote>
-                    “I’ve always believed that if you want to really try and make a great 
-                    film, not a good film, but a great film, you have to take a lot of 
-                    risks.”
-                    <br><br>
-                    -- Christopher Nolan
-            </blockquote>
-        </div>
-
-        <!--link to other page / website-->
-        <h3>If you like epistemology and metaphysical movie themes, then you should watch more 
-            about his movies. If you are curious about him, understand him more at 
-            <a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Christopher_Nolan">Wikipedia</a>.
-        </h3>
-
-    </div>
-</body>
+    </body>
 </html>
