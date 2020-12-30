@@ -39,7 +39,9 @@ h6{
 
 #image{
     height: auto;
-    width: 60%;
+    max-width: 60%;
+    display: block;
+    margin: 0 auto;
 }
 
 #cta-btn{
