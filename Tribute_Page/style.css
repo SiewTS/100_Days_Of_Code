@@ -1,73 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 body{
-    background: #FFFFFF;
-    line-height: 1.5;
-    font-size: 14px;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 16px;
+    color: #ffffff;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(135,135,135,1) 85%, rgba(219,219,219,1) 100%);
 }
 
-#main{
-    min-width: 360px;
-    margin: 20px 10px;
-    background: #E8E8E8;
-    padding: 16px;
-    border-radius: 5px;
+h1{
+    font-size: 3em;
+}
+h4{
+    font-size: 1.8em;
+}
+h5{
+    font-size: 1.5em;
+}
+h6{
+    font-size: 1.2em;
+}
+
+#banner{
+    height: 100vh;
+    padding: 0 5%;
+    margin: 0 auto;
 }
 
 #title{
-    width: 90%;
-    margin: 0 auto;
-    padding: 50px 0 20px 0;
+    text-align: center;
 }
 
 #img-div{
-    background: #FFFFFF;
-    padding: 16px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #image{
-    max-width: 100%;
-    margin: 0 auto;
-    display: block;
+    height: auto;
+    width: 60%;
 }
 
-#img-caption{
-    width: 80%;
-    max-width: 600px;
-    margin: 16px auto;
+#cta-btn{
+    background-color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    margin: 20px 0 0;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #000;
 }
 
-#tribute-info{
-    width: 90%;
-    margin: 2em auto;
+#cta-btn:hover{
+    background: #c2ff00 ;
+    color: #000;
+    font-size: 1.1em;
 }
 
-#tribute-info blockquote{
-    max-width: 545px;
-    margin: 0 auto;
-    text-align: left;
-    font-style: italic;
+/* tribute information */
+#sub-title{
+    text-align: center;
+    color: #000;
 }
 
-ul{
-    text-align: left;
-    max-width: 550px;
-    margin: 20px auto;
+#info{
+    background: #ffffff;  
+    padding: 4% 0;
 }
 
-h3{
-    margin: 0 auto;
+#flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    background-color: #dadada;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 400px;
+    height: 500px;
+    margin: 15px;
+    text-align: center;
+    display: inline-block;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+#item1{
+    background-image: url("./img/no-img.png");
+}
+
+#item2{
+    background-image: url("./img/no-img.png");
+}
+
+#item3{
+    background-image: url("./img/resized/tinified/doodlebug.jpg");
+}
+
+#item4{
+    background-image: url("./img/resized/tinified/following.jpg");
+}
+
+#item5{
+    background-image: url("./img/no-img.png");
+}
+
+#item6{
+    background-image: url("./img/resized/tinified/batman-begins.jpg");
+}
+
+#item7{
+    background-image: url("./img/resized/tinified/prestige.jpg");
+}
+
+#item8{
+    background-image: url("./img/resized/tinified/dark-k.jpg");
+}
+
+#item9{
+    background-image: url("./img/resized/tinified/ghajini.jpg");
+}
+
+#item10{
+    background-image: url("./img/resized/tinified/inception.jpg");
+}
+
+#item11{
+    background-image: url("./img/resized/tinified/dark-k-rises.jpg");
+}
+
+#item12{
+    background-image: url("./img/resized/tinified/mos.jpg");
+}
+
+#item13{
+    background-image: url("./img/resized/tinified/interstellar.jpg");
+}
+
+#item14{
+    background-image: url("./img/resized/tinified/dunkirk.jpg");
+}
+
+#item15{
+    background-image: url("./img/resized/tinified/tenet.jpg");
+}
+
+.mname{
+    background: rgba(194,255,0,0.5);
+    color: #000000;
+}
+
+/* end of tribute info */
+
+/* quote */
+#quote{
+    width: 70%;
+    padding: 2% 0;
+    margin: 2% auto;
+    color: #000;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+#footer{
+    color: #000;
+    text-align: center;
 }
 
 #tribute-link{
-    font-weight: bold;
+    text-decoration: none;
+    color: #c2ff00;
+    background: #000;
+    padding: 5px 10px;
 }
 
-@media (max-width: 600px){
-    #main{
-        margin: 0;
-    }
-    body{
-        margin: 0;
-    }
+#tribute-link:hover{
+    color: #000;
+    background: #c2ff00;
 }
+
+/* responsive */
