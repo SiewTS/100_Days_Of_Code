@@ -1,102 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<head>
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css">  
-</head>
+    <body>
+        <header id="header">
+            <img src="img/Untitled-1.jpg" alt="" id="header-img">
+            <nav id="nav-bar">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#product" class="nav-link">Product</a>
+                <a href="#tel" class="nav-link">Contact</a>
+            </nav>
+        </header>
 
-<body>
-    <!--header-->
-    <header id="header">
-        <img id="header-img" src="../img/246x0w.png" width="50" height="50"/>
-        <nav id="nav-bar">
-            <!--navigation-link-->
-            <ul>
-                <li><a href="#features" class="nav-link">Features</a></li>
-                <li><a href="#howitworks" class="nav-link">How It Works</a></li>
-                <li><a href="#price" class="nav-link">Pricing</a></li>
-            </ul>
-        </nav>
-    </header>
+        <section id="home">
+            <div id="banner">
+                <img src="" alt="" id="banner-img">
+            </div>
+        </section>
 
-    <!--features-->
-    <div id="features">
-        <h2>Our Features</h1>
-        <br>
-        <h3>AAAaaa</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente neque temporibus repudiandae doloribus, perferendis ratione nam ex voluptas excepturi? Error alias architecto incidunt dolores tempora quasi commodi, deleniti adipisci soluta.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, qui ipsam non neque odit voluptas repudiandae asperiores veniam aut in quaerat amet officia ipsum explicabo aspernatur voluptates! Doloremque, totam minima!
-        </p>
-        <br>
+        <section id="product"></section>
 
-        <h3>BBBbbb</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente neque temporibus repudiandae doloribus, perferendis ratione nam ex voluptas excepturi? Error alias architecto incidunt dolores tempora quasi commodi, deleniti adipisci soluta.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, qui ipsam non neque odit voluptas repudiandae asperiores veniam aut in quaerat amet officia ipsum explicabo aspernatur voluptates! Doloremque, totam minima!
-        </p>
-        <br>
+        <section id="tel">
+            <h2>Get updated with our e-newsletter every week!</h2>
+            <form action="https://www.freecodecamp.org/email-submit" id="form">
+                <input placeholder="Enter email" id="email" type="email" required>
+                <input type="submit" id="submit">
+            </form>
+        </section>
 
-        <h3>CCCccc</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente neque temporibus repudiandae doloribus, perferendis ratione nam ex voluptas excepturi? Error alias architecto incidunt dolores tempora quasi commodi, deleniti adipisci soluta.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, qui ipsam non neque odit voluptas repudiandae asperiores veniam aut in quaerat amet officia ipsum explicabo aspernatur voluptates! Doloremque, totam minima!
-        </p>
-        <br>
-    </div>
-
-    <!--embedded-video-->
-    <div id="howitworks">
-        <h2>How It Works</h2>
-        <!--HOW TO EMBED VIDEO
-            https://stackoverflow.com/questions/25661182/embed-youtube-video-refused-to-display-in-a-frame-because-it-set-x-frame-opti-->
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/G1IbRujko-A" id="video" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <!--pricing-->
-    <div id="price">
-        <!-- <h2>Pricing</h2> -->
-        <div id="item1" class="item">
-            <div class="pName">Letter A</div>
-            <h3>$500</h3>
-            <ul>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum.</li>
-            </ul>
-            <button class="btn">Select</button>
-        </div>
-        <div id="item2" class="item">
-            <div class="pName">Letter B</div>
-            <h3>$1000</h3>
-            <ul>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum.</li>
-            </ul>
-            <button class="btn">Select</button>
-        </div>
-        <div id="item3" class="item">
-            <div class="pName">Letter C</div>
-            <h3>$1500</h3>
-            <ul>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem, ipsum.</li>
-            </ul>
-            <button class="btn">Select</button>
-        </div>
-    </div>
-
-    <!--form-->
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        <input type="submit" id="submit" value="Submit">
-    </form>
-
-
-</body>
-
+        <footer></footer>
+    </body>
 </html>
