@@ -7,44 +7,128 @@ body{
 }
 
 #header{
-    height: 15vh;
-    background-color: chartreuse;
+    background-color:#fff;
     margin: 0;
     padding: 0 30px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
 }
 
-#nav-bar{
-    position:fixed;
+#header-img{
+    cursor: pointer;
+    max-height: 60px;
 }
 
-#nav-bar > ul{
+#nav-bar ul{
     list-style-type: none;
 }
 
 #nav-bar ul li{
-    display: inline;
-    float: left;
+    display: inline-block;
+    padding: 0px 30px;
 }
 
-#nav-bar ul li a {
-    display: block;
-    padding: 10px 20px;
+#nav-bar li a{
     color: #000;
-    background-color: #fff;
-    text-align: center;
+    font-weight: bold;
     text-decoration: none;
+    transition: all 0.1s ease-in 0s;
+}
+
+#nav-bar li a:hover{
+    color:crimson;
 }
 
 /*home section*/
 #home{
     height: 90vh;
-    background: url(/Landing_Page/img/thomas-tucker-MNtag_eXMKw-unsplash.jpg) no-repeat center center;
+    background: url(/freecodecamp/Landing_Page/img/thomas-tucker-MNtag_eXMKw-unsplash.jpg) no-repeat center center;
 }
 
 h1{
     margin: 0;
     padding: 0;
+    font-size: 4.5em;
+    color: #000;
+}
+/* ------------------- */
+
+/* product section */
+#product{
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 20%;
+    margin-right: 5%;
+    background-color: #ddd;
+}
+.item:nth-child(3){
+    margin: 0;
+}
+.top{
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+}
+.top h3{
+    text-align: center;
+}
+.bot{
+    padding: 20px;
+}
+.bot ul li{
+    list-style: none;
+}
+.item-btn{
+    border: 0;
+    padding: 10px 40px;
+    background-color:  rgb(114, 228, 0);
+    cursor: pointer;
+}
+.item-btn:hover{
+    background-color:chartreuse;
+}
+/* ---------------------------------- */
+
+/* tel section */
+#tel{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    /* text-align: center; */
+    align-items: center;
+    padding: 20px 5%;
+}
+#email{
+    width: 100%;
+}
+
+/* footer section */
+#footer{
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.foot1{
+    
+}
+
+.foot2{
+
+}
+
+.foot-link{
+    padding-right: 15px;
 }
